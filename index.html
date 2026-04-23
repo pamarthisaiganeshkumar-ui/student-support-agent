@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar glass-panel">
+            <div class="logo">
+                <div class="logo-icon">✨</div>
+                <h1>Astra</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li class="active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span>Home</span>
+                </li>
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>Calendar</span>
+                </li>
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    <span>Academics</span>
+                </li>
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span>Settings</span>
+                </li>
+            </ul>
+
+            <div class="user-profile">
+                <div class="avatar">Alex</div>
+                <div class="user-info">
+                    <p class="name">Alex Carter</p>
+                    <p class="role">Computer Science, Yr 3</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="top-bar glass-panel">
+                <div class="greeting">
+                    <h2>Good afternoon, Alex! 👋</h2>
+                    <p>What can I help you with today?</p>
+                </div>
+                <div class="quick-actions">
+                    <button class="action-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Final Exam Schedule</button>
+                    <button class="action-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Drop Deadline</button>
+                    <button class="action-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> Find Electives</button>
+                </div>
+            </header>
+
+            <div class="chat-history" id="chat-history">
+                <!-- Chat messages will be injected here -->
+                <div class="message ai-message">
+                    <div class="avatar ai-avatar">✨</div>
+                    <div class="message-content glass-panel">
+                        <p>I noticed registration for next semester opens in 3 days. Would you like me to help you find some electives that fit your CS degree track?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area glass-panel">
+                <button class="attach-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                </button>
+                <input type="text" id="chat-input" placeholder="Ask Astra anything... e.g., 'Register me for CS400'">
+                <button class="send-btn" id="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </main>
+
+        <!-- Right Panel: Dashboard -->
+        <aside class="dashboard glass-panel">
+            <!-- Notifications -->
+            <section class="widget notifications">
+                <div class="widget-header">
+                    <h3>Notifications</h3>
+                    <span class="badge">3</span>
+                </div>
+                <div class="notification-list">
+                    <div class="notification-item unread">
+                        <div class="notif-icon warning"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+                        <div class="notif-content">
+                            <p class="title">CS301 Assignment Due</p>
+                            <p class="time">In 4 hours</p>
+                        </div>
+                    </div>
+                    <div class="notification-item unread">
+                        <div class="notif-icon info"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></div>
+                        <div class="notif-content">
+                            <p class="title">Spring Registration Opens</p>
+                            <p class="time">Tomorrow at 8:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Calendar Preview -->
+            <section class="widget calendar-widget">
+                <div class="widget-header">
+                    <h3>Upcoming Schedule</h3>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="date-box">
+                            <span class="month">NOV</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-details">
+                            <p class="event-title">CS350 Midterm</p>
+                            <p class="event-time">10:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="date-box">
+                            <span class="month">NOV</span>
+                            <span class="day">18</span>
+                        </div>
+                        <div class="event-details">
+                            <p class="event-title">Elective Dropping Deadline</p>
+                            <p class="event-time">11:59 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Active Tasks / Workflows -->
+            <section class="widget active-tasks">
+                <div class="widget-header">
+                    <h3>Active Multi-Step Tasks</h3>
+                </div>
+                <div class="task-card">
+                    <div class="task-header">
+                        <span class="task-name">Find & Register Elective</span>
+                        <span class="task-status">2/3</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 66%"></div>
+                    </div>
+                    <ul class="task-steps">
+                        <li class="completed"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Check CS degree requirements</li>
+                        <li class="completed"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Suggest compatible electives</li>
+                        <li class="pending"><span class="dot"></span> Pending your selection to register</li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
